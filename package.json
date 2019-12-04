@@ -1,0 +1,27 @@
+{
+  "name": "voronoi-manhattan-bitmap",
+  "version": "0.1.0",
+  "description": "Library for generating Voronoi diagrams written in TypeScript.",
+  "author": "Roman Vereshchagin",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run lint && tsc",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "lint": "tslint -p ."
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.1.2",
+    "co-mocha": "^1.2.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "homepage": "https://www.sibvrv.com"
+}
